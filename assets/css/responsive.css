@@ -1,119 +1,133 @@
 @media only screen and (max-width: 600px)  {
-    .business .img {
-        height: auto;
-    }
+   
 }
 
 @media only screen and (min-width: 600px) {
-    .about-company .company {
-        padding: 2rem 5rem 3rem;
+    .hero-header .business-unit li {
+        font-size: 1rem;
     }
 
-    .creatif .img {
-        height: calc(100px + -20px);
+    .part .widget::before {
+        content: "";
+        background: var(--primary);
+        position: absolute;
+        width: 0;
+        height: 3px;
+        left: 0;
+        top: 0;
+        transition: .3s;
+    }
+    
+    .part .widget:hover::before {
+        width: 925px;
     }
 }
 
 @media only screen and (min-width: 768px)  {
-    .portofolio .image_box {
-        width: 33.33333%;
+    .hero-header {
+        background-image: url(../img/hero-home-ipad.png);
     }
+
+    .part .content .card-text {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+    
 }
 
 @media only screen and (min-width: 992px) {
-    .top-feature .dbm_column::before {
-        content: '';
+    .navbar {
+        padding: 1rem 0 !important;
+    }
+
+    .navbar::before {
+        content: "";
+        background: var(--primary);
         position: absolute;
-        height: 250px;
-        width: 710px;
-        top: -100%;
-        left: -500px;
-        background-color: var(--secondary);
-    }
-    
-    .top-feature .dbm_column::after {
-        content: '';
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 100px 0 100px 105px;
-        border-color: transparent transparent transparent var(--secondary);
-        top: 50%;
-        right: 8px;
-        -webkit-transform: translate(0, -50%);
-        -moz-transform: translate(0, -50%);
-        -ms-transform: translate(0, -50%);
-        -o-transform: translate(0, -50%);
+        width: calc(100% - 650px);
+        /* width: 340px; */
+        height: 75px;
+        right: 0;
+        top: 40px;
+        z-index: -1;
+        border-radius: 10px 0 0 10px;
+        transition: .3s;
     }
 
-
-    .portofolio .box-image {
-        flex-wrap: nowrap;
-        width: 100%;
-        box-sizing: border-box;
-        height: 80vh;
-        --bs-gutter-x: 0;
-        --bs-gutter-y: 0;
-        margin-top: 0;
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .portofolio .image_box {
-        flex: 1;
-        transition: .5s;
-        margin: 0 .5%;
-        box-sizing: 0px 0px 0px #ccc;
-        width: auto;
-    }
-
-    .portofolio .image_box .img {
-        height: calc(100% - 0vh);
-    }
-
-    .portofolio .image_box img {
-        width: 200%;
-        height: calc(100% - 0vh);
-        object-fit: cover;
-        transition: 1.5s;
-    }
-
-    .portofolio .image_box:hover {
-        flex: 1 1 50%;
-    }
-
-    .portofolio .image_box:hover img {
-        width: 100%;
-    }
-
-    .portofolio .image_box:hover .content p {
+    .navbar .logo {
         display: block;
     }
-}
 
+    .navbar .menu-bar .navbar-logo {
+        display: none !important;
+    }
 
+    .navbar .navbar-nav .nav-link {
+        font-size: 12px;
+        padding: .5rem 1rem;
+    }
 
-@media only screen and (min-width: 1200px)  {
-    .top-feature .dbm_column::before {
-        height: 200px;
-        width: 830px;
+    .navbar.shadow-sm .navbar-brand {
+        display: block !important;
     }
     
-    .top-feature .dbm_column::after {
-        border-width: 90px 0 90px 105px;
+
+
+    .hero-header {
+        background-image: url(../img/hero-home.png);
+    }
+    
+}
+
+
+@media only screen and (min-width: 1050px)  {
+    .navbar::before {
+        width: calc(100% - 685px);
+    }
+}
+
+@media only screen and (min-width: 1120px)  {
+    .navbar::before {
+        width: calc(100% - 715px);
+    }
+}
+
+@media only screen and (min-width: 1200px)  {
+    .navbar::before {
+        width: calc(100% - 850px);
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 14px;
+    }
+
+    .navbar.shadow-sm .navbar-nav .nav-link {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    
+}
+
+@media only screen and (min-width: 1300px)  {
+    .navbar::before {
+        width: calc(100% - 900px);
+    }
+}
+
+@media only screen and (min-width: 1400px)  {
+    .navbar::before {
+        width: calc(100% - 1035px);
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 16px;
     }
 }
 
 
-@media only screen and (min-width: 600px) and (max-width: 991px) {
-    .main-services .service .img {
-        height: 140px;
-        max-height: 140px;
-    }
-
-    .main-services .service:hover .img {
-        height: 150px;
-        max-height: 150px;
+@media only screen and (min-width: 1500px)  {
+    .navbar::before {
+        width: calc(100% - 1085px);
     }
 }

@@ -25,7 +25,7 @@
         if ($(this).scrollTop() > 300) {
             $('.sticky-top').addClass('shadow-sm').css('top', '0px');
         } else {
-            $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
+            $('.sticky-top').removeClass('shadow-sm').css('top', '-150px');
         }
     });
     
@@ -94,21 +94,21 @@
         breakpoints: {
             // when window width is >= 480px
             480: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 0
             },
             // when window width is >= 640px
             600: {
-                slidesPerView: 2,
+                slidesPerView: 1,
                 spaceBetween: 0
             },
             767: {
-                slidesPerView: 3,
+                slidesPerView: 2,
                 spaceBetween: 0
             },
             // when window is <= 991px
             991: {
-                slidesPerView: 4,
+                slidesPerView: 3,
                 spaceBetween: 0,
             },
         }
