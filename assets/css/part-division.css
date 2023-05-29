@@ -1,0 +1,189 @@
+:root {
+    --primary: #FF7309;
+    --secondary: #254061;
+    --third : #8D8B8B;
+    --light: #FFFFFF;
+    --dark: #000000;
+    --font-family: 'Montserrat';
+}
+
+
+.other-hero-header.hero-business {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background-image: url(../img/hero-business.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+}
+
+.hero-business .caption span {
+    font-size: calc(1.325rem + .9vw);
+    color: var(--light);
+}
+
+.hero-business .features .content {
+    padding-left: 1rem;
+}
+
+.hero-business .features .content + .content {
+    margin-left: 2rem;
+}
+
+.hero-business .features .content::before {
+    content: "";
+    background: var(--primary);
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.hero-business .features .content p {
+    color: var(--light);
+}
+
+.part-division .content .card-text {
+    font-size: .9rem;
+}
+
+
+.widget-scale {
+    transition: .5s;
+    border-bottom: 5px solid transparent;
+    background: var(--light);
+}
+
+.widget-scale:hover {
+    box-shadow: 5px 8px 11px rgba(0, 0, 0, 0.15);
+    border-bottom: 5px solid var(--primary);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.widget-scale .img {
+    position: relative;
+    overflow: hidden;
+}
+
+.widget-scale .img img {
+    transition: .5s;
+}
+
+.widget-scale:hover .img img {
+    transform: scale(1.2)
+}
+
+.widget-scale .card-text {
+    font-size: .9rem;
+    line-height: 1.19;
+} 
+
+
+.slider-portofolio.our-business {
+    margin-bottom: 0;
+    padding: 4rem 0 9rem;
+    background-image: url(../img/bg-part.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.slider-portofolio::before {
+    content: "";
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 49.02%, rgba(0, 0, 0, 0.126) 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.our-business .slider-container {
+    position: relative;
+    z-index: 1;
+}
+
+.our-business .swiper-container {
+    position: static;
+}
+
+.our-business .swiper-button-prev {
+    background-image: url("../img/arrow_left.svg");
+    background-size: 12px;
+    top: 48%;
+    left: -2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 3.68819px 12.9086px 0.922046px rgba(0, 0, 0, 0.16);
+}
+.our-business .swiper-button-next {
+    background-image: url("../img/arrow_right.svg");
+    background-size: 12px;
+    top: 48%;
+    right: -2%;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 3.68819px 12.9086px 0.922046px rgba(0, 0, 0, 0.16);
+}
+
+.slider-portofolio .heading-caption .card-text {
+    color: var(--light);
+    font-size: .9rem;
+    text-align: justify;
+}
+
+.panel-instalation {
+    padding: 3rem 0 10rem;
+}
+
+.panel-instalation .header-title {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.panel-instalation .header-title::before {
+    content: "";
+    background: var(--primary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 200px;
+    height: 3px;
+}
+
+
+.widget-img .img {
+    overflow: hidden;
+    position: relative;
+}
+
+.widget-img .img img {
+    transition: .5s;
+}
+
+.widget-img:hover .img img {
+    transform: scale(1.2);
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .our-business .swiper-button-prev {
+        left: -5%;
+    }
+    .our-business .swiper-button-next {
+        right: -5%;
+    }
+}

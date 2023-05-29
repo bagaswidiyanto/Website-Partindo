@@ -113,6 +113,113 @@
             },
         }
     });
+    var cardSlider = new Swiper('.portofolio-slider', {
+        autoplay: false,
+        // {
+        // 	delay: 4000,
+        // 	disableOnInteraction: false
+        // },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        slidesPerView: 4,
+        spaceBetween: 30,
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            // when window width is >= 640px
+            600: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            // when window is <= 991px
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        }
+    });
+    
+    var cardSlider = new Swiper('.genset-division-slider', {
+        autoplay: false,
+        // {
+        // 	delay: 4000,
+        // 	disableOnInteraction: false
+        // },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        slidesPerView: 4,
+        spaceBetween: 30,
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            // when window width is >= 640px
+            600: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            // when window is <= 991px
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        }
+    });
+
+    var cardSlider = new Swiper('.panel-instalation-slider', {
+        autoplay: false,
+        // {
+        // 	delay: 4000,
+        // 	disableOnInteraction: false
+        // },
+        loop: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        slidesPerView: 3,
+        spaceBetween: 30,
+        breakpoints: {
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            // when window width is >= 640px
+            600: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            767: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            },
+            // when window is <= 991px
+            991: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+        }
+    });
 
     var cardSlider = new Swiper('.test-slider', {
         autoplay:
