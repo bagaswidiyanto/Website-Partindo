@@ -359,7 +359,7 @@ p {
     background-image: url("../img/arrow_left.svg");
     background-size: 12px;
     top: 48%;
-    left: -5%;
+    left: -2%;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -370,7 +370,7 @@ p {
     background-image: url("../img/arrow_right.svg");
     background-size: 12px;
     top: 48%;
-    right: -5%;
+    right: -2%;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -453,6 +453,7 @@ p {
     transition: .5s;
     color: var(--light);
     font-weight: 800;
+    font-size: .8rem;
 }
 
 .main-service .widget:hover .main-title {
@@ -534,7 +535,7 @@ p {
 /*** Engine ***/
 .engine .list {
     padding-right: 4rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
 }
 
 .engine .list li {
@@ -542,7 +543,7 @@ p {
     list-style: none;
     padding-right: 1rem;
     font-weight: 800;
-    font-size: 1.1rem;
+    font-size: .9rem;
 }
 
 .engine .list li::before {

@@ -7,6 +7,13 @@
         font-size: 1rem;
     }
 
+    .top-feature .swiper-button-prev {
+        left: -5%;
+    }
+    .top-feature .swiper-button-next {
+        right: -5%;
+    }
+
     .part .widget::before {
         content: "";
         background: var(--primary);
@@ -20,6 +27,14 @@
     
     .part .widget:hover::before {
         width: 925px;
+    }
+
+    .engine .list {
+        padding-top: 3rem;
+    }
+
+    .engine .list li {
+        font-size: 1.1rem;
     }
 }
 
@@ -76,6 +91,11 @@
     .hero-header {
         background-image: url(../img/hero-home.png);
     }
+
+
+    .main-service .widget .main-title {
+        font-size: 1rem;
+      }
     
 }
 
@@ -130,4 +150,11 @@
     .navbar::before {
         width: calc(100% - 1085px);
     }
+}
+
+
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+    .main-service .widget .main-title {
+        padding: 1rem 0.5rem;
+      }
 }
