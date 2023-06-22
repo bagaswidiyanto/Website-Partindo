@@ -1,0 +1,72 @@
+:root {
+    --primary: #FF7309;
+    --secondary: #254061;
+    --third : #8D8B8B;
+    --light: #FFFFFF;
+    --dark: #000000;
+    --font-family: 'Montserrat';
+}
+
+/*** Project Portfolio ***/
+#portfolio-flters {
+    display: grid;
+}
+
+#portfolio-flters li {
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    color: var(--secondary);
+    cursor: pointer;
+    transition: .5s;
+    padding: .4rem 2rem;
+    list-style: circle;
+    font-size: .9rem;
+
+}
+
+#portfolio-flters li::before {
+    content: "";
+    background: var(--primary);
+    position: absolute;
+    left: 15px;
+    top: 12px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+}
+
+#portfolio-flters li:hover,
+#portfolio-flters li.active {
+    background: #D9D9D9;
+}
+
+.portfolio-container .widget-animation .main-title {
+    line-height: 1.1;
+    position: absolute;
+    left: -3%;
+    opacity: 1;
+    background: #676767;
+}
+
+.portfolio-container .widget-animation:hover .main-title {
+    background: var(--primary);
+    left: 0;
+}
+
+.portfolio-container .widget-animation .card-title {
+    font-weight: 900;
+    margin-bottom: 0;
+    font-size: 1rem;
+}
+
+.portfolio-container .widget-animation .card-fitur {
+    font-weight: 600;
+    font-size: .9rem;
+    margin-bottom: .8rem;
+}
+
+.portfolio-container .widget-animation .card-text {
+    font-size: .8rem;
+    font-weight: 300;
+}

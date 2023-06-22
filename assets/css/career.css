@@ -1,0 +1,127 @@
+:root {
+    --primary: #FF7309;
+    --secondary: #254061;
+    --third : #8D8B8B;
+    --light: #FFFFFF;
+    --dark: #000000;
+    --font-family: 'Montserrat';
+}
+
+
+.hero-career {
+    margin-bottom: 0;
+    padding: 5rem 0;
+    background-image: url(../img/hero-career.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    transition: .3s;
+}
+
+.hero-career::before {
+    content: "";
+    background: linear-gradient(190.92deg, rgba(0, 0, 0, 0) 34.54%, #000000 88.11%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.career .widget-animation.widget-scale:hover {
+    box-shadow: 3px 8px 8px rgba(0, 0, 0, 0.3);
+}
+
+.career .widget-animation .img {
+    position: relative;
+    max-height: 350px;
+}
+
+.career .widget-animation .main-title {
+    line-height: 1.1;
+}
+
+.career .widget-animation .main-title .card-title {
+    margin-bottom: 0;
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.career .widget-animation .main-title .card-position {
+    font-size: .9rem;
+    text-transform: uppercase;
+}
+
+.career .widget-animation .card-body .card-date {
+    color: #676767;
+    font-size: .8rem;
+}
+
+
+.career .widget-animation .card-body .more-btn a {
+    font-size: .8rem;
+    padding: .3rem 1rem;
+}
+
+
+
+
+.detail-career .position .card-title {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.detail-career .position .location p {
+    font-size: 12px;
+    text-transform: capitalize;
+
+}
+
+.modal-resume .form-box .box-file {
+    border: 1px solid #B9B8B8;
+    padding: 30px;
+    position: relative;
+    text-align: right;
+}
+
+.modal-resume .form-box .box-file .image_file {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    color: var(--light);
+    top: 0;
+    height: 100%;
+}
+
+.modal-resume .form-box .box-file span {
+    border: 2px solid var(--primary);
+    padding: 10px;
+    color: var(--primary);
+}
+
+.modal-resume .form-box .phone {
+    border: 1px solid #B9B8B8;
+    padding: 20px;
+}
+
+.modal-resume .form-box .phone label {
+    font-size: 24px;
+    color: var(--secondary);
+    padding-right: 20px;
+    border-right: 2px solid;
+}
+
+.modal-resume .form-box .phone input { 
+    font-size: 24px;
+    margin-left: 10px;
+    color: var(--secondary);
+}
+
+.modal-resume .form-box .phone input:focus{
+    outline: none;
+}
